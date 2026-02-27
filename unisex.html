@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Shop versatile unisex jewelry at NOVI. Discover modern designs perfect for everyone.">
+    <title>Unisex Jewelry - NOVI</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header/Navigation -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">NOVI</a>
+
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="categories.html" class="nav-link active">Categories</a>
+                <a href="new-arrivals.html" class="nav-link">New Arrivals</a>
+                <a href="on-sale.html" class="nav-link">On Sale</a>
+                <a href="help.html" class="nav-link">Help</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-icons">
+                <a href="login.html" class="nav-icon" title="Account">
+                    <i class="fas fa-user"></i>
+                </a>
+                <div class="nav-icon cart-badge" data-count="0" title="Cart">
+                    <i class="fas fa-shopping-bag"></i>
+                </div>
+            </div>
+
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header" style="background: linear-gradient(135deg, #F093FB 0%, #F5576C 100%);">
+        <div class="page-header-content">
+            <h1 class="page-title">Unisex Collection</h1>
+            <p class="page-subtitle">Versatile & Modern Jewelry</p>
+        </div>
+    </section>
+
+    <!-- Filter Bar -->
+    <section class="filter-bar">
+        <div class="container">
+            <div class="filter-controls">
+                <div class="filter-group">
+                    <label>Sort By:</label>
+                    <select class="filter-select" onchange="sortProducts(this.value, 'unisex')">
+                        <option value="featured">Featured</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="newest">Newest</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label>Type:</label>
+                    <select class="filter-select" onchange="filterByType(this.value, 'unisex')">
+                        <option value="all">All Types</option>
+                        <option value="necklace">Necklaces</option>
+                        <option value="ring">Rings</option>
+                        <option value="bracelet">Bracelets</option>
+                        <option value="pendant">Pendants</option>
+                    </select>
+                </div>
+
+                <div class="filter-results">
+                    <span id="product-count">80 Products</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-lg" id="unisex-products"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>NOVI</h3>
+                    <p>Discover accessories and jewelry created to complement your personal style. Every piece tells a
+                        story.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="categories.html">Categories</a>
+                        <a href="new-arrivals.html">New Arrivals</a>
+                        <a href="on-sale.html">On Sale</a>
+                        <a href="help.html">Help & FAQ</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <div class="footer-links">
+                        <a href="contact.html">Contact Us</a>
+                        <a href="terms.html">Terms & Conditions</a>
+                        <a href="shipping.html">Shipping & Delivery</a>
+                        <a href="returns.html">Returns & Exchanges</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-envelope"></i> info@novijewelry.com</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Jewelry Lane, NY 10001</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 NOVI Jewelry. All rights reserved. | Designed with ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="products.js"></script>
+    <script src="main.js"></script>
+    <script>
+        // Load unisex products
+        window.addEventListener('load', function () {
+            const products = getProductsByCategory('unisex');
+            renderProducts(products, 'unisex-products');
+            document.getElementById('product-count').textContent = products.length + ' Products';
+        });
+    </script>
+
+</body>
+
+</html>

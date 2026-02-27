@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Shop discounted jewelry at NOVI. Find amazing deals on necklaces, rings, bracelets, and more.">
+    <title>On Sale - NOVI Jewelry</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header/Navigation -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">NOVI</a>
+
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="categories.html" class="nav-link">Categories</a>
+                <a href="new-arrivals.html" class="nav-link">New Arrivals</a>
+                <a href="on-sale.html" class="nav-link active">On Sale</a>
+                <a href="help.html" class="nav-link">Help</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-icons">
+                <a href="login.html" class="nav-icon" title="Account">
+                    <i class="fas fa-user"></i>
+                </a>
+                <div class="nav-icon cart-badge" data-count="0" title="Cart">
+                    <i class="fas fa-shopping-bag"></i>
+                </div>
+            </div>
+
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header" style="background: linear-gradient(135deg, #FA709A 0%, #FEE140 100%);">
+        <div class="page-header-content">
+            <h1 class="page-title">Special Offers</h1>
+            <p class="page-subtitle">Save on premium jewelry - Limited time only</p>
+        </div>
+    </section>
+
+    <!-- Sale Banner -->
+    <section class="section bg-white" style="padding: var(--spacing-lg) 0;">
+        <div class="container">
+            <div class="text-center">
+                <div
+                    style="display: inline-block; background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%); color: white; padding: var(--spacing-md) var(--spacing-xl); border-radius: var(--radius-lg); font-weight: 600; font-size: var(--text-lg);">
+                    <i class="fas fa-tags"></i> Up to 50% OFF on selected items
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Bar -->
+    <section class="filter-bar">
+        <div class="container">
+            <div class="filter-controls">
+                <div class="filter-group">
+                    <label>Discount:</label>
+                    <select class="filter-select" onchange="filterByDiscount(this.value)">
+                        <option value="all">All Discounts</option>
+                        <option value="50">50% OFF</option>
+                        <option value="40">40% OFF</option>
+                        <option value="30">30% OFF</option>
+                        <option value="20">20% OFF</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label>Category:</label>
+                    <select class="filter-select" onchange="filterByCategory(this.value)">
+                        <option value="all">All Categories</option>
+                        <option value="women">Women</option>
+                        <option value="men">Men</option>
+                        <option value="unisex">Unisex</option>
+                    </select>
+                </div>
+
+                <div class="filter-results">
+                    <span id="product-count">62 Items On Sale</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-lg" id="sale-products"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>NOVI</h3>
+                    <p>Discover accessories and jewelry created to complement your personal style. Every piece tells a
+                        story.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="categories.html">Categories</a>
+                        <a href="new-arrivals.html">New Arrivals</a>
+                        <a href="on-sale.html">On Sale</a>
+                        <a href="help.html">Help & FAQ</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <div class="footer-links">
+                        <a href="contact.html">Contact Us</a>
+                        <a href="terms.html">Terms & Conditions</a>
+                        <a href="shipping.html">Shipping & Delivery</a>
+                        <a href="returns.html">Returns & Exchanges</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-envelope"></i> info@novijewelry.com</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Jewelry Lane, NY 10001</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 NOVI Jewelry. All rights reserved. | Designed with ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="products.js"></script>
+    <script src="main.js"></script>
+    <script>
+        // Load sale products
+        window.addEventListener('load', function () {
+            const products = getSaleProducts();
+            renderProducts(products, 'sale-products');
+            document.getElementById('product-count').textContent = products.length + ' Items On Sale';
+        });
+    </script>
+
+</body>
+
+</html>

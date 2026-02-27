@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create your NOVI account to start shopping elegant jewelry and accessories.">
+    <title>Sign Up - NOVI Jewelry</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">NOVI</a>
+
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="categories.html" class="nav-link">Categories</a>
+                <a href="new-arrivals.html" class="nav-link">New Arrivals</a>
+                <a href="on-sale.html" class="nav-link">On Sale</a>
+                <a href="help.html" class="nav-link">Help</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-icons">
+                <a href="login.html" class="nav-icon">
+                    <i class="fas fa-user"></i>
+                </a>
+                <div class="nav-icon cart-badge" data-count="0">
+                    <i class="fas fa-shopping-bag"></i>
+                </div>
+            </div>
+
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sign Up Section -->
+    <section class="section"
+        style="min-height: 100vh; display: flex; align-items: center; padding-top: 100px; background: linear-gradient(135deg, #FAF9F6 0%, #FFFFFF 100%);">
+        <div class="container">
+            <div style="max-width: 500px; margin: 0 auto;">
+
+                <div class="text-center mb-xl">
+                    <h1 style="font-size: var(--text-4xl); margin-bottom: var(--spacing-md);">Create Account</h1>
+                    <p style="color: var(--color-gray); font-size: var(--text-lg);">Join NOVI and discover your perfect
+                        piece</p>
+                </div>
+
+                <div class="bg-white p-xl" style="border-radius: var(--radius-xl); box-shadow: var(--shadow-elegant);">
+
+                    <!-- Social Sign Up (Visual Only) -->
+                    <div
+                        style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-md); margin-bottom: var(--spacing-xl);">
+                        <button class="btn btn-outline"
+                            style="display: flex; align-items: center; justify-content: center; gap: var(--spacing-sm);">
+                            <i class="fab fa-google" style="color: #DB4437;"></i>
+                            Google
+                        </button>
+                        <button class="btn btn-outline"
+                            style="display: flex; align-items: center; justify-content: center; gap: var(--spacing-sm);">
+                            <i class="fab fa-facebook-f" style="color: #4267B2;"></i>
+                            Facebook
+                        </button>
+                    </div>
+
+                    <div style="text-align: center; margin-bottom: var(--spacing-xl); position: relative;">
+                        <span
+                            style="background: white; padding: 0 var(--spacing-md); position: relative; z-index: 2; color: var(--color-gray);">OR</span>
+                        <div
+                            style="position: absolute; top: 50%; left: 0; right: 0; height: 1px; background: var(--color-gray-light); z-index: 1;">
+                        </div>
+                    </div>
+
+                    <!-- Sign Up Form -->
+                    <form id="signup-form">
+                        <div class="form-group">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" name="name" class="form-input" placeholder="Enter your full name"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" name="email" class="form-input" placeholder="your.email@example.com"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Phone Number</label>
+                            <input type="tel" name="phone" class="form-input" placeholder="+1 (555) 123-4567" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Password</label>
+                            <input type="password" name="password" class="form-input"
+                                placeholder="Create a strong password" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Confirm Password</label>
+                            <input type="password" name="confirm-password" class="form-input"
+                                placeholder="Re-enter your password" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-checkbox">
+                                <input type="checkbox" required>
+                                <span>I agree to the <a href="terms.html" style="color: var(--color-gold);">Terms &
+                                        Conditions</a></span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary"
+                            style="width: 100%; margin-top: var(--spacing-lg);">
+                            Create Account
+                        </button>
+                    </form>
+
+                    <div class="text-center mt-lg">
+                        <p style="color: var(--color-gray);">
+                            Already have an account?
+                            <a href="login.html" style="color: var(--color-gold); font-weight: 600;">Sign In</a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 NOVI Jewelry. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="products.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

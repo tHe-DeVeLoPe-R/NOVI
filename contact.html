@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contact NOVI Jewelry. Get in touch with our customer service team via email, phone, or contact form.">
+    <title>Contact Us - NOVI Jewelry</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header/Navigation -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">NOVI</a>
+
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="categories.html" class="nav-link">Categories</a>
+                <a href="new-arrivals.html" class="nav-link">New Arrivals</a>
+                <a href="on-sale.html" class="nav-link">On Sale</a>
+                <a href="help.html" class="nav-link">Help</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </nav>
+
+            <div class="nav-icons">
+                <a href="login.html" class="nav-icon" title="Account">
+                    <i class="fas fa-user"></i>
+                </a>
+                <div class="nav-icon cart-badge" data-count="0" title="Cart">
+                    <i class="fas fa-shopping-bag"></i>
+                </div>
+            </div>
+
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header" style="background: linear-gradient(135deg, #FF9A9E 0%, #FAD0C4 100%);">
+        <div class="page-header-content">
+            <h1 class="page-title">Get In Touch</h1>
+            <p class="page-subtitle">We'd love to hear from you</p>
+        </div>
+    </section>
+
+    <!-- Contact Info Cards -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
+
+                <div class="contact-info-card reveal">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>info@novijewelry.com</p>
+                    <p>support@novijewelry.com</p>
+                    <small>We'll respond within 24 hours</small>
+                </div>
+
+                <div class="contact-info-card reveal">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>+1 (555) 123-4567</p>
+                    <p>Mon-Fri: 9AM - 6PM EST</p>
+                    <small>Toll-free customer support</small>
+                </div>
+
+                <div class="contact-info-card reveal">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Visit Us</h3>
+                    <p>123 Jewelry Lane</p>
+                    <p>New York, NY 10001</p>
+                    <small>By appointment only</small>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="section bg-white">
+        <div class="container">
+            <div class="contact-form-wrapper">
+                <div class="contact-form-content">
+                    <h2>Send Us a Message</h2>
+                    <p>Fill out the form below and we'll get back to you as soon as possible</p>
+
+                    <form class="contact-form" onsubmit="handleContactSubmit(event)">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" class="form-input" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" class="form-input" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" class="form-input" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" class="form-input">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" class="form-input" required>
+                                <option value="">Select a subject</option>
+                                <option value="order">Order Inquiry</option>
+                                <option value="product">Product Question</option>
+                                <option value="shipping">Shipping & Delivery</option>
+                                <option value="return">Returns & Exchanges</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" class="form-input" rows="6" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <div class="contact-form-image">
+                    <img src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=800&h=1000&fit=crop"
+                        alt="Contact NOVI Jewelry">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Hours -->
+    <section class="section" style="background: linear-gradient(135deg, #667EEA 0%, #764BA2 100%); color: white;">
+        <div class="container">
+            <div class="text-center">
+                <h2 style="color: white; margin-bottom: var(--spacing-xl);">Business Hours</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-lg" style="max-width: 600px; margin: 0 auto;">
+                    <div>
+                        <h4 style="color: var(--color-gold); margin-bottom: var(--spacing-sm);">Customer Service</h4>
+                        <p>Monday - Friday: 9:00 AM - 6:00 PM EST</p>
+                        <p>Saturday: 10:00 AM - 4:00 PM EST</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+
+                    <div>
+                        <h4 style="color: var(--color-gold); margin-bottom: var(--spacing-sm);">Showroom Visits</h4>
+                        <p>Monday - Friday: 10:00 AM - 5:00 PM EST</p>
+                        <p>By appointment only</p>
+                        <p style="margin-top: var(--spacing-sm);"><small>Call to schedule your visit</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>NOVI</h3>
+                    <p>Discover accessories and jewelry created to complement your personal style. Every piece tells a
+                        story.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="categories.html">Categories</a>
+                        <a href="new-arrivals.html">New Arrivals</a>
+                        <a href="on-sale.html">On Sale</a>
+                        <a href="help.html">Help & FAQ</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <div class="footer-links">
+                        <a href="contact.html">Contact Us</a>
+                        <a href="terms.html">Terms & Conditions</a>
+                        <a href="shipping.html">Shipping & Delivery</a>
+                        <a href="returns.html">Returns & Exchanges</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-envelope"></i> info@novijewelry.com</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Jewelry Lane, NY 10001</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 NOVI Jewelry. All rights reserved. | Designed with ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        function handleContactSubmit(event) {
+            event.preventDefault();
+
+            const formData = {
+                firstName: document.getElementById('firstName').value,
+                lastName: document.getElementById('lastName').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                subject: document.getElementById('subject').value,
+                message: document.getElementById('message').value
+            };
+
+            console.log('Contact form submitted:', formData);
+            alert('Thank you for contacting us! We\'ll get back to you within 24 hours.');
+            event.target.reset();
+        }
+    </script>
+
+</body>
+
+</html>

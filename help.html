@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Get help with your NOVI jewelry purchase. Find answers to FAQs about shipping, returns, payments, and more.">
+    <title>Help & FAQ - NOVI Jewelry</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header/Navigation -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">NOVI</a>
+
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="categories.html" class="nav-link">Categories</a>
+                <a href="new-arrivals.html" class="nav-link">New Arrivals</a>
+                <a href="on-sale.html" class="nav-link">On Sale</a>
+                <a href="help.html" class="nav-link active">Help</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-icons">
+                <a href="login.html" class="nav-icon" title="Account">
+                    <i class="fas fa-user"></i>
+                </a>
+                <div class="nav-icon cart-badge" data-count="0" title="Cart">
+                    <i class="fas fa-shopping-bag"></i>
+                </div>
+            </div>
+
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header" style="background: linear-gradient(135deg, #A8EDEA 0%, #FED6E3 100%);">
+        <div class="page-header-content">
+            <h1 class="page-title">How Can We Help?</h1>
+            <p class="page-subtitle">Find answers to frequently asked questions</p>
+        </div>
+    </section>
+
+    <!-- Help Categories -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
+                <a href="#shipping" class="help-category-card reveal">
+                    <div class="help-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Shipping & Delivery</h3>
+                    <p>Learn about delivery times, tracking, and shipping costs</p>
+                </a>
+
+                <a href="#returns" class="help-category-card reveal">
+                    <div class="help-icon">
+                        <i class="fas fa-undo-alt"></i>
+                    </div>
+                    <h3>Returns & Exchanges</h3>
+                    <p>Information on our return policy and exchange process</p>
+                </a>
+
+                <a href="#payment" class="help-category-card reveal">
+                    <div class="help-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>Payment Methods</h3>
+                    <p>Accepted payment options and security information</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section bg-white">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="faq-container">
+
+                <!-- Shipping FAQs -->
+                <div id="shipping" class="faq-category">
+                    <h3 class="faq-category-title"><i class="fas fa-shipping-fast"></i> Shipping & Delivery</h3>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>How long does shipping take?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Standard shipping typically takes 5-7 business days. Express shipping (2-3 business days)
+                                and overnight shipping options are also available at checkout. International shipping
+                                times vary by destination but generally take 10-15 business days.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Do you offer free shipping?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes! We offer free standard shipping on all orders over $100. For orders under $100, a
+                                flat shipping fee of $8.99 applies.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Can I track my order?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Absolutely! Once your order ships, you'll receive a tracking number via email. You can
+                                use this number to track your package on our website or the carrier's website.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Returns FAQs -->
+                <div id="returns" class="faq-category">
+                    <h3 class="faq-category-title"><i class="fas fa-undo-alt"></i> Returns & Exchanges</h3>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>What is your return policy?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We offer a 30-day return policy for all unworn, undamaged items in their original
+                                packaging. Custom or personalized items cannot be returned unless defective.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>How do I initiate a return?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Log into your account, go to "Order History," select the item you wish to return, and
+                                click "Request Return." You'll receive a prepaid return label via email within 24 hours.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Can I exchange an item?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes! We offer free exchanges for different sizes or styles. Simply indicate your
+                                preference when initiating your return, and we'll ship the replacement item immediately.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Payment FAQs -->
+                <div id="payment" class="faq-category">
+                    <h3 class="faq-category-title"><i class="fas fa-credit-card"></i> Payment Methods</h3>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>What payment methods do you accept?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We accept all major credit cards (Visa, MasterCard, American Express, Discover), PayPal,
+                                Apple Pay, Google Pay, and Shop Pay. We also offer Afterpay for installment payments.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Is my payment information secure?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes! We use industry-standard SSL encryption to protect your payment information. We
+                                never store your complete credit card details on our servers.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Do you offer payment plans?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes! Through Afterpay, you can split your purchase into 4 interest-free payments. This
+                                option is available at checkout for orders between $35 and $1,000.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product FAQs -->
+                <div class="faq-category">
+                    <h3 class="faq-category-title"><i class="fas fa-gem"></i> Product Information</h3>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Are your jewelry pieces hypoallergenic?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Most of our jewelry is made from hypoallergenic materials including sterling silver, 14k
+                                gold, and surgical steel. Product descriptions specify materials used for each item.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>How do I care for my jewelry?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Store jewelry in a cool, dry place away from direct sunlight. Clean with a soft cloth and
+                                avoid exposure to chemicals, perfumes, and water. Detailed care instructions are
+                                included with each purchase.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Still Need Help -->
+    <section class="section" style="background: linear-gradient(135deg, #667EEA 0%, #764BA2 100%); color: white;">
+        <div class="container text-center">
+            <h2 style="color: white; margin-bottom: var(--spacing-md);">Still Need Help?</h2>
+            <p style="font-size: var(--text-lg); margin-bottom: var(--spacing-xl); opacity: 0.9;">Our customer service
+                team is here to assist you</p>
+            <a href="contact.html" class="btn btn-outline btn-lg" style="border-color: white; color: white;">Contact
+                Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>NOVI</h3>
+                    <p>Discover accessories and jewelry created to complement your personal style. Every piece tells a
+                        story.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="categories.html">Categories</a>
+                        <a href="new-arrivals.html">New Arrivals</a>
+                        <a href="on-sale.html">On Sale</a>
+                        <a href="help.html">Help & FAQ</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <div class="footer-links">
+                        <a href="contact.html">Contact Us</a>
+                        <a href="terms.html">Terms & Conditions</a>
+                        <a href="shipping.html">Shipping & Delivery</a>
+                        <a href="returns.html">Returns & Exchanges</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-envelope"></i> info@novijewelry.com</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Jewelry Lane, NY 10001</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 NOVI Jewelry. All rights reserved. | Designed with ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        function toggleFAQ(element) {
+            const faqItem = element.parentElement;
+            const isActive = faqItem.classList.contains('active');
+
+            // Close all FAQ items
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('active');
+            });
+
+            // Open clicked item if it wasn't active
+            if (!isActive) {
+                faqItem.classList.add('active');
+            }
+        }
+    </script>
+
+</body>
+
+</html>
