@@ -798,6 +798,9 @@
 }
 
 .page-header-content h1,
+.page-header-content p {
+    color: var(--color-white);
+}
 .page-title {
     font-size: var(--text-5xl);
     margin-bottom: var(--spacing-md);
@@ -869,6 +872,7 @@
     font-size: var(--text-3xl);
     font-family: var(--font-heading);
     margin-bottom: var(--spacing-sm);
+    color: var(--color-white) !important;
 }
 
 .category-description {
